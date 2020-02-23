@@ -1,0 +1,53 @@
+/* 
+This is the fifteen.css for the appearance of the fifteen.html page which is about fifteen Puzzle. 
+It defines the background and the border of the puzzle tiles, and the fonts, positions, sizes of 
+various parts on the page. It also defines different mouse cursors when the mouse moves onto 
+different tiles, and the border and text color of the movable tiles when the mouse moves onto them.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+
+body, button {
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 14pt;
+}
+
+body {
+	text-align: center;
+}
+
+p, #puzzle-area {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	width: 80%;
+}
+
+#puzzle-area {
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
+
+.tile {
+	width: 90px;
+	height: 90px;
+	border: 5px solid black;
+	background-image: url("background.jpg");
+	position: absolute;
+	display: flex;
+	align-items: center;
+	font-size: 40pt;
+}
+
+.unmovable:hover {
+	cursor: default;
+}
+
+.movable:hover {
+	border-color: red;
+	color: red;
+	cursor: pointer;
+}

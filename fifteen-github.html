@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSE 154 Fifteen Puzzle</title>
+
+    <link href="https://webster.cs.washington.edu/images/fifteen/fifteen.gif"
+          type="image/gif" rel="shortcut icon" />
+
+    <link href="fifteen.css" type="text/css" rel="stylesheet" />
+    <script src="fifteen.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>CSE 154 Fifteen Puzzle</h1>
+    </header>
+
+    <main>
+      <p>
+        The goal of the fifteen puzzle is to un-jumble its fifteen squares
+        by repeatedly making moves that slide squares into the empty space.
+        How quickly can you solve it?
+      </p>
+
+      <!-- 
+        There is no other semantic meaning to the puzzle area, so we
+        have chosen to use a div tag to represent this block element
+      -->
+      <div id="puzzle-area">
+        <!--
+          This area holds the actual fifteen puzzle pieces
+        -->
+      </div>
+
+      <p id="controls">
+        <button id="shuffle-button">Shuffle</button>
+      </p>
+
+      <p>
+        Image
+        <!-- You will be adding your citation information to this DOM element -->
+        <cite id="copyright-info"></cite>
+      </p>
+
+      <p>
+        American puzzle author and mathematician Sam Loyd is often falsely
+        credited with creating the puzzle; indeed, Loyd claimed from 1891
+        until his death in 1911 that he invented it.
+        The puzzle was actually created around 1874 by Noyes Palmer Chapman,
+        a postmaster in Canastota, New York.
+      </p>
+    </main>
+
+    <footer>
+      <a href="https://webster.cs.washington.edu/validate-html.php">
+        <img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Validate HTML" />
+      </a>
+      <a href="https://webster.cs.washington.edu/validate-css.php">
+        <img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Validate CSS" />
+      </a>
+      <a href="https://webster.cs.washington.edu/jslint/?referer">
+        <img src="https://webster.cs.washington.edu/images/w3c-js.png" alt="Validate JS" />
+      </a>
+    </footer>
+  </body>
+</html>
